@@ -1,0 +1,76 @@
+body {
+  background-color: #00ADEE;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+#shark {
+  width: 300px;    
+  position: absolute;
+  bottom: -40px;
+  right: 20px;
+}
+
+#position {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#sammy {
+    bottom: -85px;
+    right: 20px;
+    width:300px;
+    position: absolute;
+    z-index: 1;
+}
+
+#eye {
+    position: absolute;
+    bottom: 81px;
+    right: 88px;
+    width: 63px;
+    z-index: 2;
+}
+
+
+@media screen and (max-width: 480px) {
+  .box {
+        -webkit-animation-name: rotate; 
+        -webkit-animation-duration: 1s; 
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+  }
+}
+
+.buttons {
+   position: absolute;
+   top: 50%;
+   margin-top: -40px;
+   left: 50%;
+   margin-left: -90px;  
+   width: 100%;
+}
+
+.social {
+    position: relative;
+    width: 40px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: auto;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to { 
+    -webkit-transform: rotate(360deg);
+  }
+}
