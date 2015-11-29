@@ -36,15 +36,6 @@ body {
 }
 
 
-@media screen and (max-width: 480px) {
-  .box {
-        -webkit-animation-name: rotate; 
-        -webkit-animation-duration: 1s; 
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-timing-function: linear;
-  }
-}
-
 .buttons {
    position: absolute;
    top: 50%;
@@ -64,6 +55,15 @@ body {
 a {
     text-decoration: none;
     cursor: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .box {
+        -webkit-animation-name: rotate; 
+        -webkit-animation-duration: 1s; 
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+  }
 }
 
 @-webkit-keyframes rotate {
